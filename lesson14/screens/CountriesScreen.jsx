@@ -1,49 +1,59 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React, { PureComponent } from 'react'
-import data from '../data/countries.json'
+import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { useNavigation } from '@react-navigation/native';
+import data from '../data/countries.json';
 
-export default class CountriesScreen extends PureComponent {
+const CountriesScreen = () => {
+    const [countries, setCountries] = useState([]);
+    const navigation = useNavigation(); // Get navigation prop
 
-    constructor() {
-        super()
-        this.state = {
-                countries: []
-        }
-    }
+    useEffect(() => {
+        setCountries(data);
+    }, []);
 
-    componentDidMount(){
-        this.setState({
-            countries:data
-        })
-    }
-
-  render() {
     return (
-      <View>
-        <Text style={StyleSheet.screenTitle}>CountriesScreen</Text>
-        <FlatList
-            data={this.state.countries}
-            keyExtractor = {countries => countries.id}
-            renderItem={({item}) => (
-                <View style={styles.cardWrapper}>
-                    <Text>Country: {item.name}</Text>
-                    <Text>Continent: {item.continent}</Text>
-                    <Text>GPD: ${item.gdp} billion</Text>
-                </View>
+        <View style={styles.container}>
+            <Text style={styles.header}>CountriesScreen</Text>
+            <FlatList
+                data={countries}
+                keyExtractor={(item) => item.id.toString()} // Ensure key is a string
+                renderItem={({ item }) => (
+                    <TouchableOpacity
+                        style={styles.card}
+                        onPress={() => navigation.navigate('CountryDetails', { country: item })}
+                    >
+                        <Text style={styles.countryName}>{item.name}</Text>
+                    </TouchableOpacity>
+                )}
+            />
+        </View>
+    );
+};
 
-            )}
-        />
-
-      </View>
-    )
-  }
-}
+export default CountriesScreen;
 
 const styles = StyleSheet.create({
-    screenTitle: {
-        fontSize: 20,
-        textAlign: center,
-        marginVertical: 15,
-        fontWeight: "bold",
-    }
-})
+    container: {
+        flex: 1,
+        padding: 10,
+        backgroundColor: '#f8f8f8',
+    },
+    header: {
+        fontSize: 22,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginVertical: 10,
+    },
+    card: {
+        backgroundColor: '#007bff',
+        padding: 15,
+        borderRadius: 10,
+        marginVertical: 5,
+        alignItems: 'center',
+    },
+    countryName: {
+        color: 'white',
+        fontSize: 18,
+        fontWeight: 'bold',
+    },
+});
