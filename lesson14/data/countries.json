@@ -1,0 +1,29 @@
+[
+
+    { "id": 1, "name": "United States", "continent": "North America", "gdp": 26939 },
+    { "id": 2, "name": "China", "continent": "Asia", "gdp": 17700 },
+    { "id": 3, "name": "Japan", "continent": "Asia", "gdp": 4358 },
+    { "id": 4, "name": "Germany", "continent": "Europe", "gdp": 4308 },
+    { "id": 5, "name": "United Kingdom", "continent": "Europe", "gdp": 3199 },
+    { "id": 6, "name": "India", "continent": "Asia", "gdp": 3285 },
+    { "id": 7, "name": "France", "continent": "Europe", "gdp": 2935 },
+    { "id": 8, "name": "Brazil", "continent": "South America", "gdp": 1868 },
+    { "id": 9, "name": "Italy", "continent": "Europe", "gdp": 2071 },
+    { "id": 10, "name": "Canada", "continent": "North America", "gdp": 2420 },
+    { "id": 11, "name": "Russia", "continent": "Europe", "gdp": 1775 },
+    { "id": 12, "name": "South Korea", "continent": "Asia", "gdp": 1797 },
+    { "id": 13, "name": "Australia", "continent": "Oceania", "gdp": 1802 },
+    { "id": 14, "name": "Mexico", "continent": "North America", "gdp": 1430 },
+    { "id": 15, "name": "Spain", "continent": "Europe", "gdp": 1408 },
+    { "id": 16, "name": "Indonesia", "continent": "Asia", "gdp": 1271 },
+    { "id": 17, "name": "Netherlands", "continent": "Europe", "gdp": 1080 },
+    { "id": 18, "name": "Saudi Arabia", "continent": "Asia", "gdp": 1116 },
+    { "id": 19, "name": "Turkey", "continent": "Asia", "gdp": 905 },
+    { "id": 20, "name": "Switzerland", "continent": "Europe", "gdp": 879 },
+    { "id": 21, "name": "Argentina", "continent": "South America", "gdp": 641 },
+    { "id": 22, "name": "Sweden", "continent": "Europe", "gdp": 687 },
+    { "id": 23, "name": "Poland", "continent": "Europe", "gdp": 806 },
+    { "id": 24, "name": "Thailand", "continent": "Asia", "gdp": 506 },
+    { "id": 25, "name": "South Africa", "continent": "Africa", "gdp": 420 }
+
+    ]   
