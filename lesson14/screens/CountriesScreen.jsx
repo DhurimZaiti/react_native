@@ -1,22 +1,38 @@
-import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableOpacity, TextInput } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import data from '../data/countries.json';
 
 const CountriesScreen = () => {
     const [countries, setCountries] = useState([]);
-    const navigation = useNavigation(); // Get navigation prop
+    const [searchText, setSearchText] = useState(''); // State for search text
+    const navigation = useNavigation();
 
     useEffect(() => {
         setCountries(data);
     }, []);
 
+    // Filtered list based on search text
+    const filteredCountries = countries.filter(country =>
+        country.name.toLowerCase().includes(searchText.toLowerCase())
+    );
+
     return (
         <View style={styles.container}>
             <Text style={styles.header}>CountriesScreen</Text>
+
+            {/* Search Bar */}
+            <TextInput
+                style={styles.searchInput}
+                placeholder="Search for a country..."
+                placeholderTextColor="#666"
+                value={searchText}
+                onChangeText={setSearchText}
+            />
+
             <FlatList
-                data={countries}
-                keyExtractor={(item) => item.id.toString()} // Ensure key is a string
+                data={filteredCountries} // Use the filtered list
+                keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => (
                     <TouchableOpacity
                         style={styles.card}
@@ -43,6 +59,15 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         marginVertical: 10,
+    },
+    searchInput: {
+        height: 40,
+        borderColor: '#ccc',
+        borderWidth: 1,
+        borderRadius: 8,
+        paddingHorizontal: 10,
+        marginBottom: 10,
+        backgroundColor: '#fff',
     },
     card: {
         backgroundColor: '#007bff',
