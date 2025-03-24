@@ -1,0 +1,9 @@
+use expo init <project_name> --template
+(there's a new one, this one will be deprecated)
+
+Create a src folder, with components, data, navigation and screens as sub-folders
+
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+npm i @react-navigation/native @react-navigation/stack
+
+- to setup the navigation and other stuff
