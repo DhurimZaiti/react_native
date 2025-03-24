@@ -1,23 +1,19 @@
 import { Button, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Home = ({ navigation }) => {
+const Contact = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome to the HomeScreen</Text>
+      <Text style={styles.text}>Welcome to the ContactScreen</Text>
       <Button 
-        title='Go To about Screen'
-        onPress={() => navigation.navigate("About")}
-      />
-      <Button 
-        title='Go To Contact Screen'
-        onPress={() => navigation.navigate("Conact")}
-      />
+            title='Go back to Home'
+            onPress={() => navigation.goBack()}
+        />
     </View>
   )
 }
 
-export default Home
+export default Contact
 
 const styles = StyleSheet.create({
     container: {
