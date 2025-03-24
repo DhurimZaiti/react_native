@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "NIKE HYPERCHASE",
+      "category": "Men's Basketball Shoes",
+      "description": "Lightweight design with responsive cushioning.",
+      "price": "125$",
+      "image": "https://i.imgur.com/6QKjNzB.png"
+    },
+    {
+      "id": 2,
+      "name": "NIKE AIR MAX",
+      "category": "Men's Running Shoes",
+      "description": "Engineered for comfort and style.",
+      "price": "150$",
+      "image": "https://i.imgur.com/6QKjNzB.png"
+    }
+  ]
+  

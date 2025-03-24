@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "NIKE HYPERCHASE",
+      "category": "Men's Basketball Shoes",
+      "description": "Lightweight design with responsive cushioning.",
+      "price": "125$",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.49ABKChg8dXjAoX29S1_nAHaG3%26pid%3DApi&f=1&ipt=4856c0b18c71e1f82a5b2366f1b0eb13291cbbce10b24191d4b8fabd665dfe86&ipo=images"
+    },
+    {
+      "id": 2,
+      "name": "NIKE AIR MAX",
+      "category": "Men's Running Shoes",
+      "description": "Engineered for comfort and style.",
+      "price": "150$",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.49ABKChg8dXjAoX29S1_nAHaG3%26pid%3DApi&f=1&ipt=4856c0b18c71e1f82a5b2366f1b0eb13291cbbce10b24191d4b8fabd665dfe86&ipo=images"
+    }
+  ]
+  
