@@ -1,14 +1,26 @@
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Drawer } from 'expo-router/drawer';
+import { Image, Text, View } from 'react-native';
+
 
 export default function Layout() {
   return (
       <GestureHandlerRootView style={{ flex: 1 }}>
-        <Drawer>
+        <Drawer
+        screenOptions={{ drawerPosition: 'right' }}
+        >
           <Drawer.Screen
               name="index" // Matches app/index.js
               options={{
-                drawerLabel: 'Home',
+                  drawerLabel: () => (
+                    <View style={{ flexDirection: 'row', alignItems: "center" }}>
+                      <Image
+                        source={require('../assets/images/react-logo.png')}
+                        style={{ width: 20, height: 20, marginRight: 10 }}
+                        alt='Image that should be here :P'
+                      ></Image>
+                    </View>
+                  ),
                 title: 'Overview',
               }}
           />
@@ -30,3 +42,4 @@ export default function Layout() {
       </GestureHandlerRootView>
   );
 }
+
