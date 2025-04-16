@@ -1,0 +1,69 @@
+{
+    "popularproducts": [
+      {
+        "id": 1,
+        "name": "iPad 8",
+        "category": "Tablet",
+        "price": "$880",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.photoworkout.com%2Fwp-content%2Fuploads%2F2017%2F10%2FBest-Tablets-for-Photo-Editing.jpg&f=1&nofb=1&ipt=a28d5cc3456c2137da207864ae388e557627fbe87cddfd948145602ee6f9618a",
+        "description": "Lorem Ipsum dolor sit amet, ut labore et dolore magna aliqua."
+      },
+      {
+        "id": 2,
+        "name": "Iphone X",
+        "category": "iPhone",
+        "price": "$750",
+        "image": "https://images.unsplash.com/photo-1530319067432-f2a729c03db5?ixid=MXwxMjA3fDB8MHxwaG90by1wWdlflhx8fGVufDB8fHw%3D&ixlib=rb-1.2.1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, quis nostrud exercitation."
+      },
+      {
+        "id": 3,
+        "name": "Samsung S21",
+        "category": "Samsung",
+        "price": "$990",
+        "image": "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wWdlflhx8fGVufDB8fHw%3D",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, quis nostrud exercitation."
+      },
+      {
+        "id": 4,
+        "name": "MacBook Pro",
+        "category": "Laptop",
+        "price": "$1999",
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+        "description": "Powerful laptop for creators and professionals."
+      },
+      {
+        "id": 5,
+        "name": "Google Pixel 7",
+        "category": "Smartphone",
+        "price": "$699",
+        "image": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7",
+        "description": "The best of Google, built around you."
+      },
+      {
+        "id": 6,
+        "name": "Dell XPS 13",
+        "category": "Laptop",
+        "price": "$1199",
+        "image": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef",
+        "description": "Compact powerhouse for work and play."
+      },
+      {
+        "id": 7,
+        "name": "iPhone 14",
+        "category": "iPhone",
+        "price": "$1099",
+        "image": "https://images.unsplash.com/photo-1662187771523-7de3f8a5c9d0",
+        "description": "Latest Apple technology packed into a sleek design."
+      },
+      {
+        "id": 8,
+        "name": "Lenovo Tab P11",
+        "category": "Tablet",
+        "price": "$279",
+        "image": "https://images.unsplash.com/photo-1612000172068-e9d53c6eb5b8",
+        "description": "Affordable entertainment and productivity tablet."
+      }
+    ]
+  }
+  

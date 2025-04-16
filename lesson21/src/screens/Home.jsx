@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Button,Image } from "react-native";
 import Swiper from "react-native-swiper";
 import Icons from "../components/Icons";
 
-const Home=({navigation})=>{
+const Home = ({navigation}) => {
     return(
         <View style={styles.container}>
             <View style={styles.sliderContainer}>
