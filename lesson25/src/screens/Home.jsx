@@ -24,22 +24,6 @@ class Home extends React.Component {
     } 
     
 
-    sortByPrice = (direction) => {
-        const sorted = [...this.state.product.popularproducts].sort((a, b) => {
-          const priceA = parseFloat(a.price.replace("$", ""));
-          const priceB = parseFloat(b.price.replace("$", ""));
-          return direction === "asc" ? priceA - priceB : priceB - priceA;
-        });
-      
-        this.setState((prevState) => ({
-          product: {
-            ...prevState.product,
-            popularproducts: sorted,
-          },
-        }));
-      };
-      
-
 
     render() {
         return (
@@ -51,20 +35,6 @@ class Home extends React.Component {
                 )}
                 ListHeaderComponent={
                     <View style={styles.container}>
-                        <View style={styles.sortButtons}>
-                            <TouchableOpacity
-                                style={styles.sortBtn}
-                                onPress={() => this.sortByPrice("asc")}
-                            >
-                                <Text style={styles.sortText}>Sort ↑</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity
-                                style={styles.sortBtn}
-                                onPress={() => this.sortByPrice("desc")}
-                            >
-                                <Text style={styles.sortText}>Sort ↓</Text>
-                            </TouchableOpacity>
-                        </View>
                         <View style={styles.sliderContainer}>
                             <Swiper 
                                 autoplay
@@ -180,22 +150,6 @@ const styles=StyleSheet.create({
         fontSize: 15,
         marginBottom: 20,
     },
-    sortButtons: {
-        flexDirection: "row",
-        justifyContent: "center",
-        marginVertical: 10,
-        gap: 10,
-      },
-      sortBtn: {
-        backgroundColor: "#22D4FF",
-        paddingVertical: 6,
-        paddingHorizontal: 15,
-        borderRadius: 6,
-      },
-      sortText: {
-        color: "#fff",
-        fontWeight: "600",
-      },      
 })
 
 export default Home;
