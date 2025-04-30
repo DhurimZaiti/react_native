@@ -9,6 +9,7 @@ const ProductCard = ({ name, category, description, price, image }) => {
         <Text style={styles.name}>{name}</Text>
         <Text style={styles.category}>{category}</Text>
         <Text style={styles.description}>{description}</Text>
+        <Text style={styles.rating}>{rating}</Text>
         <Text style={styles.price}>{price}</Text>
       </View>
     </View>
@@ -45,6 +46,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   category: {
+    color: '#00aaff',
+    fontWeight: '500',
+    marginBottom: 4,
+  },
+  rating: {
     color: '#00aaff',
     fontWeight: '500',
     marginBottom: 4,

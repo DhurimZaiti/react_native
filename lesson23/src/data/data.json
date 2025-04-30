@@ -72,7 +72,8 @@
       "price": "$750",
       "image": "https://images.unsplash.com/photo-1530319067432-f2a729c03db5?auto=format&fit=crop&w=600&q=80",
       "category": "iOS",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, quis nostrud exercitation."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, quis nostrud exercitation.",
+      "rating": "4.6/5"
     },
     {
       "id": 2,
@@ -80,7 +81,8 @@
       "price": "$999",
       "image": "https://images.unsplash.com/photo-1647232440941-e256293d25bb?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "category": "iOS",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, quis nostrud exercitation."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, quis nostrud exercitation.",
+      "rating": "4.6/5"
     },
     {
       "id": 3,
@@ -88,7 +90,8 @@
       "price": "$999",
       "image": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=600&q=80",
       "category": "iOS",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, quis nostrud exercitation."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, quis nostrud exercitation.",
+      "rating": "4.6/5"
     }
   ],
     "android": [

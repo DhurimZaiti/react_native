@@ -24,6 +24,7 @@ export class IosScreen extends PureComponent {
             name={product.name}
             category={product.category}
             description={product.description}
+            rating={product.rating}
             price={product.price}
             image={product.image}
           />
