@@ -26,7 +26,9 @@ export class AndroidScreen extends PureComponent {
             description={product.description}
             price={product.price}
             image={product.image}
+            onPress={() => navigation.navigate('ProductDetail', { product })}
           />
+        
         ))}
       </ScrollView>
     );

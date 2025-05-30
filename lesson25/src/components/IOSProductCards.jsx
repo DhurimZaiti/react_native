@@ -1,25 +1,24 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import React from 'react';
 
-const ProductCard = ({ name, category, description, price, image }) => {
+const ProductCard = ({ name, category, description, price, image, onPress }) => {
   return (
-    <View style={styles.card}>
-      <TouchableOpacity 
-        onPress={() => navigate.navigation('OneScreen')}
-      >  
+    <TouchableOpacity onPress={onPress} activeOpacity={0.8}>
+      <View style={styles.card}>
         <Image source={{ uri: image }} style={styles.image} />
         <View style={styles.content}>
           <Text style={styles.name}>{name}</Text>
           <Text style={styles.category}>{category}</Text>
           <Text style={styles.description}>{description}</Text>
-          <Text style={styles.price}>{price}</Text>
+          <Text style={styles.price}>${price}</Text>
         </View>
-      </TouchableOpacity>
-    </View>
+      </View>
+    </TouchableOpacity>
   );
 };
 
 export default ProductCard;
+
 
 const styles = StyleSheet.create({
   card: {

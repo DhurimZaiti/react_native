@@ -27,6 +27,14 @@ const AboutStackNavigator=({navigation})=>{
     )
 }
 
+const SinglePageStackNavigator=({navigation})=>{
+    return(
+        <Stack.Navigator screenOptions={screenOptionStyle}>
+            <Stack.Screen name="ProductDetail" component={ProductDetailScreen} />
+        </Stack.Navigator>
+    )
+}
+
 export {MainStackNavigator, AboutStackNavigator};
 
 
